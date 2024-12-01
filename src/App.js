@@ -254,7 +254,7 @@ function App() {
         You know the drill. Green squares fully match the mystery game. Purple squares are
         partially correct. Grey squares are fully incorrect.{" "}
       </p>
-      <p>You have six guesses. Good luck! {randomGame.game}</p>
+      <p>You have six guesses. Good luck!</p>
       <b ref={answerRef} hidden={true}>
         It was {randomGame.game}!! 
       </b>
