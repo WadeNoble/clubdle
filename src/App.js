@@ -2,7 +2,7 @@ import "./App.css";
 import * as React from "react";
 import data from "./data/data.json";
 import genreData from "./data/genres.json";
-import { Autocomplete, TextField } from "@mui/material";
+import { Autocomplete, createFilterOptions, TextField } from "@mui/material";
 
 function App() {
   const games = data.solutions;
@@ -133,7 +133,7 @@ function App() {
       images = ["none", "none", "none", "none", "none", "none", "none", "none"];
     }
 
-    //if guesses used up
+    
 
     //update state
     setColors((prev) => {
@@ -149,6 +149,7 @@ function App() {
     console.log(colors);
     console.log(arrows);
 
+    //if guesses used up
     if (guesses.length >= 5) {
       alert("sorry bro... you struck out this time... 🙀");
       answerRef.current.hidden = false;
@@ -166,6 +167,7 @@ function App() {
       <form autoComplete="off" onSubmit={onSubmit}>
         <div className="search">
           <Autocomplete
+          //filterOptions={createFilterOptions({limit:10})}
             disablePortal
             options={options}
             sx={{ width: 300 }}
@@ -248,18 +250,18 @@ function App() {
         ))}
       </div>
       <hr />
-      <p>I'm thinking of a mystery club game.</p>
-      <b> Are you a bad enough dude to Club this Dle?</b>
+      <div id="info"><p>I'm thinking of a mystery club game.</p>
+      <b> Are you a bad enough dude to Club this dle?</b>
       <p>
-        You know the drill. Green squares fully match the mystery game. 
-        Purple squares are
-        partially correct (Up Arrows means the mystery game's value is higher in that field, down arrows=lower). Grey squares are fully incorrect.{" "}
+        <green>Green</green> squares fully match the mystery game. 
+        <purple> Purple </purple>squares are
+        partially correct (An up arrow means the <b>mystery game's</b> value is higher in that field. A down arrow means the mystery game's value is lower). <gray>Grey</gray> squares are fully incorrect.{" "}
       </p>
       <p>You have six guesses. Good luck!</p>
-      <b ref={answerRef} hidden={true}>
+      <b id="answer" ref={answerRef} hidden={true}>
         It was {randomGame.game}!! 
       </b>
-      <br></br>
+      </div>
       <button id="possible" onClick={showGenres}>
         Possible genres:
       </button>

@@ -1,6 +1,18 @@
 jeff{
   display: block;
 }
+green{
+font-weight: bold;
+  color:green;
+}
+purple{
+  font-weight: bold;
+    color:purple;
+  }
+  gray{
+    font-weight: bold;
+      color:gray;
+    }
 
 .App {
   text-align: center;
@@ -162,7 +174,17 @@ b{
   background-color: #FF8C00;
   font-weight: bold;
 }
-
+#info{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: block;
+  background-color:#242424;
+}
 .letter {
   flex: 33%;
   height: 100%;
