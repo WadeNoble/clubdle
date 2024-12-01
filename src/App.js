@@ -251,8 +251,9 @@ function App() {
       <p>I'm thinking of a mystery club game.</p>
       <b> Are you a bad enough dude to Club this Dle?</b>
       <p>
-        You know the drill. Green squares fully match the mystery game. Purple squares are
-        partially correct. Grey squares are fully incorrect.{" "}
+        You know the drill. Green squares fully match the mystery game. 
+        Purple squares are
+        partially correct (Up Arrows means the mystery game's value is higher in that field, down arrows=lower). Grey squares are fully incorrect.{" "}
       </p>
       <p>You have six guesses. Good luck!</p>
       <b ref={answerRef} hidden={true}>

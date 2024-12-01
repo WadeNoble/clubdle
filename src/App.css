@@ -154,25 +154,13 @@ b{
   color: white;
   display: grid;
   place-items: center;
-  background-size:cover;
+  background-size:100% 100%;
   padding: 15px;
   font-size: .8em;
 }
 .legend{
   background-color: #FF8C00;
   font-weight: bold;
-}
-.box.almost{
-  background-color: #b49f39;
-  background-image: none;
-}
-
-.box.wrong{
-  background-color: red;
-}
-
-.box.right{
-  background-color: green;
 }
 
 .letter {
