@@ -1,0 +1,714 @@
+{
+   "solutions" : [
+      {
+          "id": "1",
+          "game": "Ghost Trick: Phantom Detective",
+          "country": "Japan",
+          "dev": "CAPCOM",
+          "year": 2010,
+          "score": 8.4,
+          "season": 1,
+          "genre": "Puzzle, Adventure, Visual Novel"
+      },
+      {
+          "id": "2",
+          "game": "Cave Story (+)",
+          "country": "Japan",
+          "dev": "Pixel",
+          "year": 2004,
+          "score": 5.9,
+          "season": 1,
+          "genre": "Action-Adventure, Platformer"
+      },
+      {
+          "id": "3",
+          "game": "Brothers: A Tale of Two Sons",
+          "country": "Sweden",
+          "dev": "Starbreeze Studios",
+          "year": 2013,
+          "score": 5.1,
+          "season": 1,
+          "genre": "Puzzle, Adventure"
+      },
+      {
+          "id": "4",
+          "game": "Metal Gear Rising: Revengeance",
+          "country": "Japan",
+          "dev": "Platinum/KONAMI",
+          "year": 2013,
+          "score": 8.3,
+          "season": 1,
+          "genre": "Character Action"
+      },
+      {
+          "id": "5",
+          "game": "Return of the Obra Dinn",
+          "country": "USA",
+          "dev": "Lucas Pope",
+          "year": 2018,
+          "score": 8.2,
+          "season": 1,
+          "genre": "Adventure, Puzzle, Detective"
+      },
+      {
+          "id": "6",
+          "game": "Furi",
+          "country": "France",
+          "dev": "The Game Bakers",
+          "year": 2016,
+          "score": 6.2,
+          "season": 1,
+          "genre": "Action, Shmup"
+      },
+      {
+          "id": "7",
+          "game": "Antichamber",
+          "country": "Australia",
+          "dev": "Demruth",
+          "year": 2013,
+          "score": 5.2,
+          "season": 1,
+          "genre": "Puzzle"
+      },
+      {
+          "id": "8",
+          "game": "Celeste",
+          "country": "Canada",
+          "dev": "Extremely OK Games",
+          "year": 2018,
+          "score": 9.1,
+          "season": 1,
+          "genre": "Platformer"
+      },
+      {
+          "id": "9",
+          "game": "A Short Hike",
+          "country": "Canada",
+          "dev": "Adam Robinson-Yu",
+          "year": 2019,
+          "score": 7.8,
+          "season": 1,
+          "genre": "Platformer, Adventure"
+      },
+      {
+          "id": "10",
+          "game": "Hyper Light Drifter",
+          "country": "USA",
+          "dev": "Heart Machine",
+          "year": 2016,
+          "score": 6.4,
+          "season": 1,
+          "genre": "Action-adventure"
+      },
+      {
+          "id": "11",
+          "game": "Pikmin",
+          "country": "Japan",
+          "dev": "Nintendo",
+          "year": 2001,
+          "score": 6.1,
+          "season": 2,
+          "genre": "Real-Time Strategy, Puzzle"
+      },
+      {
+          "id": "12",
+          "game": "Path of Exile",
+          "country": "New Zealand",
+          "dev": "Grinding Gear Games",
+          "year": 2013,
+          "score": 7.3,
+          "season": 2,
+          "genre": "Action RPG, MMO"
+      },
+      {
+          "id": "13",
+          "game": "Resident Evil REmake",
+          "country": "Japan",
+          "dev": "CAPCOM",
+          "year": 2002,
+          "score": 8.2,
+          "season": 2,
+          "genre": "Survival Horror, Cranktroidvania"
+      },
+      {
+          "id": "14",
+          "game": "Devil May Cry",
+          "country": "Japan",
+          "dev": "CAPCOM",
+          "year": 2001,
+          "score": 6.7,
+          "season": 2,
+          "genre": "Character Action"
+      },
+      {
+          "id": "15",
+          "game": "Mega Man X",
+          "country": "Japan",
+          "dev": "CAPCOM",
+          "year": 1993,
+          "score": 7.8,
+          "season": 2,
+          "genre": "Action, Platformer"
+      },
+      {
+          "id": "16",
+          "game": "Mirror's Edge",
+          "country": "Sweden",
+          "dev": "DICE",
+          "year": 2008,
+          "score": 7.1,
+          "season": 2,
+          "genre": "First-Person Adventure, Action-Adventure"
+      },
+      {
+          "id": "17",
+          "game": "Metroid Fusion",
+          "country": "Japan",
+          "dev": "Nintendo",
+          "year": 2002,
+          "score": 8.1,
+          "season": 2,
+          "genre": "Metroidvania, Horror"
+      },
+      {
+          "id": "18",
+          "game": "Metroid: Zero Mission",
+          "country": "Japan",
+          "dev": "Nintendo",
+          "year": 2004,
+          "score": 9.2,
+          "season": 2,
+          "genre": "Metroidvania"
+      },
+      {
+          "id": "19",
+          "game": "Hypnospace Outlaw",
+          "country": "USA",
+          "dev": "Tendershoot Games",
+          "year": 2019,
+          "score": 8.2,
+          "season": 2,
+          "genre": "Simulation, Puzzle"
+      },
+      {
+          "id": "20",
+          "game": "Titanfall 2",
+          "country": "USA",
+          "dev": "Respawn Entertainment",
+          "year": 2016,
+          "score": 8.0,
+          "season": 2,
+          "genre": "First Person Shooter"
+      },
+      {
+          "id": "21",
+          "game": "Environmental Station Alpha",
+          "country": "Finland",
+          "dev": "Hempuli",
+          "year": 2015,
+          "score": 8.5,
+          "season": 3,
+          "genre": "Metroidvania, Puzzle"
+      },
+      {
+          "id": "22",
+          "game": "Transistor",
+          "country": "USA",
+          "dev": "Supergiant Games",
+          "year": 2014,
+          "score": 7.2,
+          "season": 3,
+          "genre": "Action RPG, Strategy"
+      },
+      {
+          "id": "23",
+          "game": "Silent Hill 2",
+          "country": "Japan",
+          "dev": "KONAMI",
+          "year": 2001,
+          "score": 8.4,
+          "season": 3,
+          "genre": "Survival Horror, Puzzle"
+      },
+      {
+          "id": "24",
+          "game": "Jet Set Radio",
+          "country": "Japan",
+          "dev": "SEGA (Smilebit)",
+          "year": 2000,
+          "score": 7.1,
+          "season": 3,
+          "genre": "Platformer, Sports"
+      },
+      {
+          "id": "25",
+          "game": "Outer Wilds",
+          "country": "USA",
+          "dev": "Mobius Digital",
+          "year": 2019,
+          "score": 9.5,
+          "season": 3,
+          "genre": "Puzzle, First-Person Adventure"
+      },
+      {
+          "id": "26",
+          "game": "VA-11 Hall-A",
+          "country": "Venezuela",
+          "dev": "Sukeban Games",
+          "year": 2016,
+          "score": 4.6,
+          "season": 3,
+          "genre": "Visual Novel"
+      },
+      {
+          "id": "27",
+          "game": "VVVVVV",
+          "country": "UK",
+          "dev": "Terry Cavanagh",
+          "year": 2010,
+          "score": 7.0,
+          "season": 3,
+          "genre": "Platformer"
+      },
+      {
+          "id": "28",
+          "game": "Dead Space",
+          "country": "USA",
+          "dev": "EA Redwood Shores (Visceral Games)",
+          "year": 2008,
+          "score": 7.5,
+          "season": 3,
+          "genre": "Survival Horror, Action-adventure"
+      },
+      {
+          "id": "29",
+          "game": "Cyber Shadow",
+          "country": "Finland",
+          "dev": "Mechanical Head Studios",
+          "year": 2021,
+          "score": 6.6,
+          "season": 3,
+          "genre": "Platformer"
+      },
+      {
+          "id": "30",
+          "game": "Banjo-Kazooie",
+          "country": "UK",
+          "dev": "RARE",
+          "year": 1998,
+          "score": 7.0,
+          "season": 3,
+          "genre": "Platformer, Action-adventure"
+      },
+      {
+          "id": "31",
+          "game": "Metroid Dread",
+          "country": "Spain",
+          "dev": "Mercury Steam",
+          "year": 2021,
+          "score": 9.3,
+          "season": 4,
+          "genre": "Metroidvania"
+      },
+      {
+          "id": "32",
+          "game": "Resident Evil 2 Remake",
+          "country": "Japan",
+          "dev": "CAPCOM",
+          "year": 2019,
+          "score": 8.6,
+          "season": 5,
+          "genre": "Survival Horror, Third-Person Shooter"
+      },
+      {
+          "id": "33",
+          "game": "Superliminal",
+          "country": "USA",
+          "dev": "Pillow Castle Games",
+          "year": 2019,
+          "score": 5.9,
+          "season": 5,
+          "genre": "Puzzle"
+      },
+      {
+          "id": "34",
+          "game": "Katana Zero",
+          "country": "USA",
+          "dev": "askiisoft",
+          "year": 2019,
+          "score": 7.7,
+          "season": 5,
+          "genre": "Action, Platformer"
+      },
+      {
+          "id": "35",
+          "game": "999: Nine Hours, Nine Persons, Nine Doors",
+          "country": "Japan",
+          "dev": "Spike Chunsoft",
+          "year": 2009,
+          "score": 7.5,
+          "season": 5,
+          "genre": "Visual Novel, Puzzle"
+      },
+      {
+          "id": "36",
+          "game": "Tony Hawk's Underground",
+          "country": "USA",
+          "dev": "Neversoft",
+          "year": 2003,
+          "score": 8.4,
+          "season": 5,
+          "genre": "Sports"
+      },
+      {
+          "id": "37",
+          "game": "Bioshock",
+          "country": "USA",
+          "dev": "2K Boston (Irrational Games)",
+          "year": 2007,
+          "score": 7.5,
+          "season": 5,
+          "genre": "First-Person Shooter, Horror"
+      },
+      {
+          "id": "38",
+          "game": "Oh Jeez, Oh No, My Rabbits Are Gone!!",
+          "country": "Canada",
+          "dev": "Studio Nevermore",
+          "year": 2019,
+          "score": 6.3,
+          "season": 5,
+          "genre": "Puzzle, Platformer"
+      },
+      {
+          "id": "39",
+          "game": "Cruelty Squad",
+          "country": "Finland",
+          "dev": "Consumer Softproducts",
+          "year": 2021,
+          "score": 6.4,
+          "season": 5,
+          "genre": "First-Person Shooter, Immersive Sim"
+      },
+      {
+          "id": "40",
+          "game": "Bastion",
+          "country": "USA",
+          "dev": "Supergiant Games",
+          "year": 2011,
+          "score": 7.5,
+          "season": 5,
+          "genre": "Action RPG"
+      },
+      {
+          "id": "41",
+          "game": "Everhood",
+          "country": "Spain",
+          "dev": "Chris Nordgren & Jordi Roca",
+          "year": 2021,
+          "score": 7.0,
+          "season": 5,
+          "genre": "Rhythm, RPG"
+      },
+      {
+          "id": "42",
+          "game": "ZeroRanger",
+          "country": "Finland",
+          "dev": "System Erasure",
+          "year": 2018,
+          "score": 7.7,
+          "season": 6,
+          "genre": "Shmup"
+      },
+      {
+          "id": "43",
+          "game": "ICO",
+          "country": "Japan",
+          "dev": "Team ICO",
+          "year": 2001,
+          "score": 5.6,
+          "season": 6,
+          "genre": "Action-adventure"
+      },
+      {
+          "id": "44",
+          "game": "Bayonetta",
+          "country": "Japan",
+          "dev": "Platinum",
+          "year": 2009,
+          "score": 8.0,
+          "season": 6,
+          "genre": "Character Action"
+      },
+      {
+          "id": "45",
+          "game": "Hellblade: Senua's Sacrifice",
+          "country": "UK",
+          "dev": "Ninja Theory",
+          "year": 2017,
+          "score": 7.4,
+          "season": 6,
+          "genre": "Action-adventure, Hack and Slash"
+      },
+      {
+          "id": "46",
+          "game": "Star Wars Jedi Knight: Jedi Academy",
+          "country": "USA",
+          "dev": "Raven Software",
+          "year": 2003,
+          "score": 5.8,
+          "season": 6,
+          "genre": "First-Person Shooter, Third-Person Shooter, Hack and Slash"
+      },
+      {
+          "id": "47",
+          "game": "Psychonauts",
+          "country": "USA",
+          "dev": "Doublefine",
+          "year": 2005,
+          "score": 6.6,
+          "season": 6,
+          "genre": "Platformer, Adventure"
+      },
+      {
+          "id": "48",
+          "game": "Vanquish",
+          "country": "Japan",
+          "dev": "Platinum",
+          "year": 2010,
+          "score": 6.1,
+          "season": 6,
+          "genre": "Third-Person Shooter, Action"
+      },
+      {
+          "id": "49",
+          "game": "MYST",
+          "country": "USA",
+          "dev": "Cyan Worlds",
+          "year": 1993,
+          "score": 8.0,
+          "season": 6,
+          "genre": "First-Person Adventure, Puzzle"
+      },
+      {
+          "id": "50",
+          "game": "Katamari Damacy",
+          "country": "Japan",
+          "dev": "Namco",
+          "year": 2004,
+          "score": 7.3,
+          "season": 6,
+          "genre": "Puzzle, Action"
+      },
+      {
+          "id": "51",
+          "game": "Later Alligator",
+          "country": "USA",
+          "dev": "Pillow Fight",
+          "year": 2019,
+          "score": 7.3,
+          "season": 6,
+          "genre": "Adventure"
+      },
+      {
+          "id": "52",
+          "game": "SIGNALIS",
+          "country": "Germany",
+          "dev": "rose-engine",
+          "year": 2022,
+          "score": 8.8,
+          "season": 7,
+          "genre": "Survival Horror"
+      },
+      {
+          "id": "53",
+          "game": "Wario Land: Shake It!",
+          "country": "Japan",
+          "dev": "Good-Feel",
+          "year": 2008,
+          "score": 6.7,
+          "season": 7,
+          "genre": "Platformer"
+      },
+      {
+          "id": "54",
+          "game": "Metal Gear Solid: The Twin Snakes",
+          "country": "Canada",
+          "dev": "Silicon Knights/KONAMI",
+          "year": 2001,
+          "score": 7.0,
+          "season": 7,
+          "genre": "Stealth, Tactical Espionage Action"
+      },
+      {
+          "id": "55",
+          "game": "Pizza Tower",
+          "country": "Canada",
+          "dev": "Tour De Pizza",
+          "year": 2023,
+          "score": 9.6,
+          "season": 7,
+          "genre": "Platformer, Action"
+      },
+      {
+          "id": "56",
+          "game": "Half-Life",
+          "country": "USA",
+          "dev": "Valve",
+          "year": 1998,
+          "score": 6.4,
+          "season": 7,
+          "genre": "First-Person Shooter, Horror"
+      },
+      {
+          "id": "57",
+          "game": "Viewtiful Joe",
+          "country": "Japan",
+          "dev": "CAPCOM",
+          "year": 2003,
+          "score": 6.8,
+          "season": 7,
+          "genre": "Beat 'em up"
+      },
+      {
+          "id": "58",
+          "game": "Grim Fandango",
+          "country": "USA",
+          "dev": "LucasArts",
+          "year": 1998,
+          "score": 6.7,
+          "season": 7,
+          "genre": "Adventure"
+      },
+      {
+          "id": "59",
+          "game": "FAITH",
+          "country": "USA",
+          "dev": "Airdorf Games",
+          "year": 2022,
+          "score": 6.4,
+          "season": 7,
+          "genre": "Horror"
+      },
+      {
+          "id": "60",
+          "game": "DOOM (2016)",
+          "country": "USA",
+          "dev": "id Software",
+          "year": 2016,
+          "score": 7.9,
+          "season": 7,
+          "genre": "First-Person Shooter"
+      },
+      {
+          "id": "61",
+          "game": "The Case of the Golden Idol",
+          "country": "Latvia",
+          "dev": "Color Gray Games",
+          "year": 2022,
+          "score": 8.4,
+          "season": 7,
+          "genre": "Adventure, Detective, Puzzle"
+      },
+      {
+          "id": "62",
+          "game": "Devil May Cry 2",
+          "country": "Japan",
+          "dev": "CAPCOM",
+          "year": 2003,
+          "score": 4.6,
+          "season": 8,
+          "genre": "Character Action, Hack and Slash"
+      },
+      {
+          "id": "63",
+          "game": "Chrono Trigger",
+          "country": "Japan",
+          "dev": "Square",
+          "year": 1995,
+          "score": 7.8,
+          "season": 8,
+          "genre": "JRPG"
+      },
+      {
+          "id": "64",
+          "game": "Firewatch",
+          "country": "USA",
+          "dev": "Campo Santo",
+          "year": 2016,
+          "score": 7.1,
+          "season": 8,
+          "genre": "First-Person Adventure"
+      },
+      {
+          "id": "65",
+          "game": "Ace Combat 04: Shattered Skies",
+          "country": "Japan",
+          "dev": "Project Aces, Namco",
+          "year": 2001,
+          "score": 7.9,
+          "season": 8,
+          "genre": "Flight Simulator"
+      },
+      {
+          "id": "66",
+          "game": "Burning Rangers",
+          "country": "Japan",
+          "dev": "Sonic Team",
+          "year": 1998,
+          "score": 5.0,
+          "season": 8,
+          "genre": "Action, Third-Person Shooter"
+      },
+      {
+          "id": "67",
+          "game": "Citizen Sleeper",
+          "country": "UK",
+          "dev": "Jump Over the Age",
+          "year": 2022,
+          "score": 8.0,
+          "season": 8,
+          "genre": "RPG"
+      },
+      {
+          "id": "68",
+          "game": "Shadow of the Colossus",
+          "country": "Japan",
+          "dev": "Team ICO",
+          "year": 2005,
+          "score": 8.3,
+          "season": 8,
+          "genre": "Action-adventure, Puzzle"
+      },
+      {
+          "id": "69",
+          "game": "Animal Well",
+          "country": "USA",
+          "dev": "Shared Memory",
+          "year": 2024,
+          "score": 7.9,
+          "season": 8,
+          "genre": "Puzzle, Platformer"
+      },
+      {
+          "id": "70",
+          "game": "DOOM Eternal",
+          "country": "USA",
+          "dev": "id Software",
+          "year": 2020,
+          "score": 8.5,
+          "season": 8,
+          "genre": "Action, First Person Shooter"
+      },
+      {
+          "id": "71",
+          "game": "Devil May Cry 3",
+          "country": "Japan",
+          "dev": "CAPCOM",
+          "year": 2005,
+          "score": 7.4,
+          "season": 8,
+          "genre": "Character Action"
+      }
+  ]
+}
