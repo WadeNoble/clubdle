@@ -2,21 +2,46 @@ import "./App.css";
 import * as React from "react";
 import data from "./data/data.json";
 import genreData from "./data/genres.json";
-import { Autocomplete, createFilterOptions, TextField } from "@mui/material";
+import dateData from "./data/dates.json";
+import {
+  Autocomplete,
+  createFilterOptions,
+  TextField,
+  Modal,
+  Typography
+} from "@mui/material";
 
 function App() {
+  const date= new Date();
+  var randomDate = -1;
+  let currentDate = `${date.getDay()+1}-${date.getMonth()+1}-${date.getFullYear()}`
   const games = data.solutions;
   const allGenres = genreData;
   var options = [];
-  const rand = React.useState(
+ const rand = React.useState(
     Math.floor(Math.random() * data.solutions.length)
   );
-  const randomGame = games[rand[0]];
-  const randGenres = randomGame.genre.toString().split(",");
+  randomDate = rand[0];
+  //console.log(data.solutions.length + "" + dateData.length);
+  for (var i=0; i<dateData.length-2; i++){
+    if (dateData[i].date === currentDate){
+      randomDate = i;
+    }
+  }
+
+  //const randomGame = games[rand[0]];
+  console.log(currentDate);
+  const day = 1;
+  const randomGame = games[randomDate];
+  const randGenres = randomGame.genre.toString().split(",").map(item=>item.trim());
+
+  //create Refs
   const inputRef = React.createRef();
   const answerRef = React.createRef();
   const eree = React.createRef();
+  const modalRef = React.createRef();
 
+  //populate search field
   for (var i = 0; i < games.length; i++) {
     var option = games[i].game;
     options.push(option);
@@ -25,6 +50,11 @@ function App() {
   const [guesses, setGuesses] = React.useState([]); // each guess is an array
   const [colors, setColors] = React.useState([]); // each guess has its color values evaluated and stored as array
   const [arrows, setArrows] = React.useState([]); //each guess can have an arrow attached for comparisons
+  const [squares, setSquares] = React.useState([]);//copypaste graphic for accuracy
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   //genres button
   function showGenres(e) {
@@ -39,16 +69,19 @@ function App() {
     e.preventDefault();
 
     const value = inputRef.current.value;
-    for (i = 0; i < games.length; i++) {
+    for (var i = 0; i < games.length; i++) {
       if (value == games[i].game) {
         var gameObject = games[i];
-        var genres = games[i].genre.split(",");
+        var genres = games[i].genre.split(",").map(item=>item.trim());
+
         var colorValues = [];
         var images = [];
+        var colorBoxes = [];
+
         var boxchamp;
+        var emoji;
         var filePath;
-        console.log(gameObject);
-        console.log(genres);
+        var done = false;
       }
     }
 
@@ -60,7 +93,6 @@ function App() {
     //if redone
     for (var i = 0; i < guesses.length; i++) {
       if (value == guesses[i].game) {
-        alert("You already tried that one dumbass!!!");
         return;
       }
     }
@@ -71,54 +103,62 @@ function App() {
         console.log("Too high!");
         boxchamp = "purple";
         colorValues.push(boxchamp);
+        emoji = "🟪";
+        colorBoxes.push(emoji);
         filePath = "url('https://i.imgur.com/2mVSBqP.png')";
         images.push(filePath);
-      } 
+      }
       //too low
       else if (!isNaN(gameObject[key]) && gameObject[key] < randomGame[key]) {
         console.log("Too low!");
         boxchamp = "purple";
         colorValues.push(boxchamp);
+        emoji = "🟪";
+        colorBoxes.push(emoji);
         filePath = "url('https://i.imgur.com/G1yMQ35.png')";
         images.push(filePath);
-      } //a genre matches, but not all 
+      } //a genre matches, but not all
       else if (
         gameObject.genre == gameObject[key] &&
-        genres.some((r) => randGenres.includes(r))
+        randGenres.some((r) => genres.includes(r))
       ) {
         if (gameObject[key] == randomGame[key]) {
-          console.log("huh?");
+          //console.log("genre?");
           boxchamp = "green";
           colorValues.push(boxchamp);
+          emoji = "🟩";
+        colorBoxes.push(emoji);
           filePath = "none";
           images.push(filePath);
-          //too high
-        }
-        console.log(genres + " " + randGenres);
+          //not full genre match
+        }else{
+        
         boxchamp = "purple";
         colorValues.push(boxchamp);
-      } 
-      else if (gameObject[key] == randomGame[key]) {
+        emoji = "🟪";
+        colorBoxes.push(emoji);}
+      } else if (gameObject[key] == randomGame[key]) {
         console.log("huh?");
         boxchamp = "green";
         colorValues.push(boxchamp);
+        emoji = "🟩";
+        colorBoxes.push(emoji);
         filePath = "none";
         images.push(filePath);
-        //too high
-      }
-      else {
+      } else {
         console.log("nope!");
         boxchamp = "grey";
         colorValues.push(boxchamp);
+        emoji = "🟫";
+        colorBoxes.push(emoji);
         filePath = "none";
         images.push(filePath);
       }
-      console.log(key + gameObject[key] + randomGame[key]);
+      //console.log(key + gameObject[key] + randomGame[key]);
     });
 
     //if correct
     if (value == randomGame.game) {
-      alert("holy crap!! 😻");
       answerRef.current.hidden = false;
       colorValues = [
         "green",
@@ -130,15 +170,27 @@ function App() {
         "green",
         "green",
       ];
+      colorBoxes=[
+        "🟩","🟩","🟩","🟩","🟩","🟩","🟩","🟩"
+      ]
       images = ["none", "none", "none", "none", "none", "none", "none", "none"];
+      modalRef.current.hidden=false;
+      done = true;
     }
-
-    
-
+    //if guesses used up
+    if (guesses.length > 5 || open) {
+      alert("never lucky...");
+      answerRef.current.hidden = false;
+      modalRef.current.hidden=false;
+      return;
+    }
     //update state
     setColors((prev) => {
       return [...prev, colorValues];
     });
+    setSquares((prev) => {
+      return [...prev, colorBoxes]
+    })
     setGuesses((prev) => {
       inputRef.current.value = "";
       return [...prev, gameObject];
@@ -146,15 +198,9 @@ function App() {
     setArrows((prev) => {
       return [...prev, images];
     });
-    console.log(colors);
-    console.log(arrows);
-
-    //if guesses used up
-    if (guesses.length >= 5) {
-      alert("sorry bro... you struck out this time... 🙀");
-      answerRef.current.hidden = false;
-      return;
-    }
+    setOpen(()=>{
+      return done;
+    });
   }
 
   //rendering
@@ -163,11 +209,10 @@ function App() {
       <nav>
         <h1>Clubdle 😼</h1>
       </nav>
-
       <form autoComplete="off" onSubmit={onSubmit}>
         <div className="search">
           <Autocomplete
-          //filterOptions={createFilterOptions({limit:10})}
+            //filterOptions={createFilterOptions({limit:10})}
             disablePortal
             options={options}
             sx={{ width: 300 }}
@@ -250,27 +295,62 @@ function App() {
         ))}
       </div>
       <hr />
-      <div id="info"><p>I'm thinking of a mystery club game.</p>
-      <b> Are you a bad enough dude to Club this dle?</b>
-      <p>
-        <green>Green</green> squares fully match the mystery game. 
-        <purple> Purple </purple>squares are
-        partially correct (An up arrow means the <b>mystery game's</b> value is higher in that field. A down arrow means the mystery game's value is lower). <gray>Grey</gray> squares are fully incorrect.{" "}
-      </p>
-      <p>You have six guesses. Good luck!</p>
-      <b id="answer" ref={answerRef} hidden={true}>
-        It was {randomGame.game}!! 
-      </b>
+      <div id="info">
+        <p>I'm thinking of a mystery club game.</p>
+        <b> Are you a bad enough dude to Club this dle?</b>
+        <p>
+          <green>Green</green> squares fully match the mystery game.
+          <purple> Purple </purple>squares are partially correct (An up arrow
+          means the <b>mystery game's</b> value is higher in that field. A down
+          arrow means the mystery game's value is lower). <gray>Grey</gray>{" "}
+          squares are fully incorrect.{" "}
+        </p>
+        <p>You have six guesses. Good luck!</p>
+        <p>(This is the daily puzzle for <green>{currentDate}</green>)</p>
+        <b id="answer" ref={answerRef} hidden={true}>
+          GGs!!
+        </b>
       </div>
-      <button id="possible" onClick={showGenres}>
-        Possible genres:
-      </button>
-      <div id="genres" hidden="true" ref={eree}>
-        {allGenres.map((entity) => (
-          <jeff>{entity}</jeff>
-        ))}
+      <button id="results" hidden="true" ref={modalRef} onClick={handleOpen}>
+          Results
+        </button>
+      <div className="modal">
+        <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <div className="modal-content">
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Holy crap 😻!! It was {randomGame.game}!
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            And it only took you {guesses.length} guesses!
+          </Typography>
+          <hr></hr>
+          <p>Share your results with the squad:</p>
+          <b>Clubdle {currentDate}</b>
+          {
+            squares.map((squess)=>(
+              <div id="resultRow">
+                <pre>{squess[1]} {squess[6]} {squess[7]} {squess[4]} {squess[3]} {squess[2]} {squess[5]}</pre>
+                </div>
+            ))
+          }
+        </div>
+      </Modal>
+        </div>
+
+        <button id="possible" onClick={showGenres}>
+          Possible genres:
+        </button>
+        <div id="genres" hidden="true" ref={eree}>
+          {allGenres.map((entity) => (
+            <jeff>{entity}</jeff>
+          ))}
+        </div>
       </div>
-    </div>
   );
 }
 /*
