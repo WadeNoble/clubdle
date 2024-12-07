@@ -139,11 +139,11 @@ input[type=submit] {
 
 .grid {
   align-self: center;
-  margin-left: 10vw;
-  width: 80vw;
   display: grid;
   grid-template-rows: repeat(6, auto);
   grid-template-columns: repeat(1, auto);
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 b{
@@ -167,7 +167,7 @@ b{
   background-color: #FF8C00;
   font-weight: bold;
 }
-#info{
+.info{
   margin-left: 15vw;
   margin-right: 15vw;
   margin-bottom: 2%;
@@ -176,6 +176,17 @@ b{
   padding-left: 2%;
   padding-right: 2%;
   display: block;
+  background-color:#242424;
+}
+#genres{
+  margin-left: 30%;
+  margin-right: 30%;
+margin-top: 2%;
+  margin-bottom: 10%;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding-left: 2%;
+  padding-right: 2%;
   background-color:#242424;
 }
 .letter {
@@ -298,4 +309,10 @@ hr{
 
 result{
   white-space: pre-wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .grid{
+    overflow-x: auto;
+  }
 }
