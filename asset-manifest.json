@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/clubdle/static/css/main.c8c9a74c.css",
-    "main.js": "/clubdle/static/js/main.db54ac8f.js",
+    "main.css": "/clubdle/static/css/main.b5956b03.css",
+    "main.js": "/clubdle/static/js/main.b11fe32f.js",
     "static/js/453.d1c4abd7.chunk.js": "/clubdle/static/js/453.d1c4abd7.chunk.js",
     "index.html": "/clubdle/index.html",
-    "main.c8c9a74c.css.map": "/clubdle/static/css/main.c8c9a74c.css.map",
-    "main.db54ac8f.js.map": "/clubdle/static/js/main.db54ac8f.js.map",
+    "main.b5956b03.css.map": "/clubdle/static/css/main.b5956b03.css.map",
+    "main.b11fe32f.js.map": "/clubdle/static/js/main.b11fe32f.js.map",
     "453.d1c4abd7.chunk.js.map": "/clubdle/static/js/453.d1c4abd7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8c9a74c.css",
-    "static/js/main.db54ac8f.js"
+    "static/css/main.b5956b03.css",
+    "static/js/main.b11fe32f.js"
   ]
 }
